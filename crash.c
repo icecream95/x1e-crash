@@ -51,6 +51,7 @@ int main(void)
 
             if ((a % 60) == 0) {
                 // This is necessary, perhaps the bug involves cpuidle?
+                // Or maybe this is only used as a cache clear primitive?
                 usleep(10000);
             }
         }
