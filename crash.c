@@ -50,6 +50,7 @@ int main(void)
             WAIT_STORES();
 
             if ((a % 60) == 0) {
+                // This is necessary, perhaps the bug involves cpuidle?
                 usleep(10000);
             }
         }
